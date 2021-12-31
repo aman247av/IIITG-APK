@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_search"
         app:actionViewClass="android.widget.SearchView"
         android:title="Search Subject"
-        app:showAsAction="ifRoom|collapseActionView"
+        app:showAsAction="always"
         />
 
     <item
