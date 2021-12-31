@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Disclaimer">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCLAIMER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/choco"
+        android:textColor="#DA0000"
+        android:layout_margin="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:text="This APP is under fair use: Copyright disclaimer under section 107 of the Copyright Act in 1976. Allowance is made for fair use for purposes such as news reporting, teaching, scholarship and research. Fair use is permitted by copyright statute that might otherwise be infiltrating. Non-profit Educational or personal use the balance in favor of Fair use."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="All rights and credit go directly to its rightful owners. No copyright infringement intended." />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="**Direct Links for Buying**"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/Poole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:text="Linear Algebra: A modern introduction by D.Poole " />
+
+                <Button
+                    android:id="@+id/thompson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:text="Calculus and Analytic geometry by GB Thompson " />
+
+                <Button
+                    android:id="@+id/C"
+                    android:layout_width="match_parent"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Let us C by Yashwant Kanetkar" />
+
+                <Button
+                    android:id="@+id/Morris"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Digital Design by M. Morris Mano" />
+
+
+                <Button
+                    android:id="@+id/Hayt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:text="Engineering Circuit Analysis by WH Hayt" />
+
+                <Button
+                    android:id="@+id/Gaonkar"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="#D6D6D6"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/choco"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="Microprocessors, Architecture, Programming by RS Gaonkar" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

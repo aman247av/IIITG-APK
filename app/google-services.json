@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430512573465",
+    "project_id": "iiitg-2feae",
+    "storage_bucket": "iiitg-2feae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430512573465:android:44018c4bdc78475f566e88",
+        "android_client_info": {
+          "package_name": "com.jee00.IIITG"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430512573465-701kgn4omtrosblo6e0pgd4q6l52t3cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeUeMEGNNehwnnBZVv88WJk8ESX_mI8ZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430512573465-701kgn4omtrosblo6e0pgd4q6l52t3cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

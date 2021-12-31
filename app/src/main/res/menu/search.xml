@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        android:title="Search Subject"
+        app:showAsAction="ifRoom|collapseActionView"
+        />
+
+    <item
+        android:id="@+id/email"
+        android:title="Important Email IDs"
+        app:showAsAction="never"/>
+
+
+
+    <item
+        android:id="@+id/feedback"
+        android:title="Send Feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Disclaimer"
+        android:title="Disclaimer"
+        app:showAsAction="never"/>
+
+
+</menu>
