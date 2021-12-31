@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/drawable-v24/ic_search.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/drawable/searchbar.xml" value="0.17685185185185184" />
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/layout/activity_disclaimer.xml" value="0.1" />
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/layout/activity_mail.xml" value="0.24895833333333334" />
@@ -13,6 +14,7 @@
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/layout/grid_lay.xml" value="0.36687116564417177" />
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/layout/paperhome_btns_firebase.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/menu/search.xml" value="0.1" />
+        <entry key="..\:/Users/aman2/AndroidStudioProjects/IIITG/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
