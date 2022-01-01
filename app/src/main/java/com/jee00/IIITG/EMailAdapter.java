@@ -3,6 +3,8 @@ package com.jee00.IIITG;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,10 +37,12 @@ public class EMailAdapter extends FirebaseRecyclerAdapter<Faculty,EMailAdapter.m
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ClipboardManager clipboardManager=(ClipboardManager) v.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip=ClipData.newPlainText("text", model.getEmail());
-                clipboardManager.setPrimaryClip(clip);
-                Toast.makeText(v.getContext(), "Email Copied", Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(Intent.ACTION_SENDTO);
+                String mailto="mailto:"+ Uri.encode(model.getEmail())+"?subject="+
+                        Uri.encode("")+Uri.encode("");
+                Uri m=Uri.parse(mailto);
+                i.setData(m);
+                v.getContext().startActivity(Intent.createChooser(i,"Send Email"));
             }
         });
 
