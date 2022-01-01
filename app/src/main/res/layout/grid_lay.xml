@@ -37,22 +37,22 @@
 
 
                 <ImageView
-                    android:id="@+id/img1"
+                    android:id="@+id/fpic"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/booki"
                     tools:ignore="ContentDescription" />
 
                 <TextView
-                    android:id="@+id/date"
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:layout_toEndOf="@id/img1"
+                    android:layout_toEndOf="@id/fpic"
                     android:fontFamily="@font/choco"
-                    android:text="This Date"
+                    android:text="Name"
                     android:textColor="#000000"
                     android:textSize="18sp" />
             </RelativeLayout>
@@ -76,12 +76,12 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
                     android:fontFamily="@font/choco"
-
+                    android:text="subject"
                     android:textColor="#000"
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/shift"
+                    android:id="@+id/mail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/sub"
@@ -89,7 +89,7 @@
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/choco"
-                    android:text="This Shift"
+                    android:text="Mail"
                     android:textColor="#000"
                     android:textSize="16sp"
                     />

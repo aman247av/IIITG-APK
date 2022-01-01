@@ -62,10 +62,10 @@ public class EMailAdapter extends FirebaseRecyclerAdapter<Faculty,EMailAdapter.m
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            pic=itemView.findViewById(R.id.img1);
+            pic=itemView.findViewById(R.id.fpic);
             relativeLayout=itemView.findViewById(R.id.whole_btn);
-            title=itemView.findViewById(R.id.date);
-            subject=itemView.findViewById(R.id.shift);
+            title=itemView.findViewById(R.id.name);
+            subject=itemView.findViewById(R.id.mail);
             sub=itemView.findViewById(R.id.sub);
 
         }
