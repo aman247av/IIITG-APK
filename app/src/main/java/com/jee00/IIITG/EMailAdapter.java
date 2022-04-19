@@ -38,7 +38,7 @@ public class EMailAdapter extends FirebaseRecyclerAdapter<Faculty,EMailAdapter.m
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(Intent.ACTION_SENDTO);
-                String mailto="mailto:"+ Uri.encode(model.getEmail())+"?subject="+
+                String mailto="mailto:"+ Uri.encode(model.getEmail())+"?subject= reasing issue"+
                         Uri.encode("")+Uri.encode("");
                 Uri m=Uri.parse(mailto);
                 i.setData(m);

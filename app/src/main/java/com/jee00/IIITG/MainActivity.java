@@ -1,6 +1,8 @@
 package com.jee00.IIITG;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -68,7 +70,26 @@ public class MainActivity extends AppCompatActivity {
 
         mainAdapter=new MainAdapter(options);
         recyclerView.setAdapter(mainAdapter);
+
+
+        ItemTouchHelper itemTouchHelper=new ItemTouchHelper(simpleCallback);
+        itemTouchHelper.attachToRecyclerView(recyclerView);
+
+
+
     }
+    ItemTouchHelper.SimpleCallback simpleCallback=new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT) {
+        @Override
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+            return false;
+        }
+
+        @Override
+        public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            Toast.makeText(MainActivity.this, "Deleting", Toast.LENGTH_SHORT).show();
+        }
+    };
+
 
     @Override
     protected void onStart() {
@@ -157,5 +178,6 @@ public class MainActivity extends AppCompatActivity {
             recyclerView.setAdapter(mainAdapter);
 
     }
+
 
 }
